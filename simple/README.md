@@ -1,5 +1,6 @@
 ```
 # Simplest way to get this app up and running
+shell> oc new-project hello-world-php
 shell> oc new-app --context-dir=simple/ https://github.com/johnedstone/hello-world-php.git 
 shell> expose svc hello-world-php --hostname=hello-world-php.<wildcard dns>
 
