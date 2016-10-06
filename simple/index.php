@@ -7,7 +7,7 @@
     <?php #<link rel="stylesheet" href="/static/customers/css/customers.css" type="text/css"> ?>
 </head>
 <body>
-    <code>
+    <div style="white-space: pre;margin: 2em;background-color: #ccc;font: Consolas, monospace;">
     Scene 1
     
      
@@ -70,6 +70,6 @@
       GUARD #2:  Well, simple!  They'd just use a standard creeper!
       GUARD #1:  What, held under the dorsal guiding feathers?
       GUARD #2:  Well, why not?
-    </code>
+    </div>
 </body>
 </html>
