@@ -6,9 +6,9 @@
     <title>Hello World From Build Image</title>
     <?php #<link rel="stylesheet" href="/static/customers/css/customers.css" type="text/css"> ?>
 </head>
-<body style="margin:0;padding:0;background-color: #99c;">
+<body style="margin:0;padding:0;background-color: #ccf;">
     <div style="white-space: pre;margin: 2em;background-color: #ccc;font-family: Monaco, Consolas, monospace;font-size: 0.8em;">
-    <h4><a href="https://en.wikipedia.org/wiki/Monty_Python_and_the_Holy_Grail">Monty Python and the Holy Grail: Scene 1</a></h4>
+      <h4><a style="color:#fff;font-size:1.1em;" href="https://en.wikipedia.org/wiki/Monty_Python_and_the_Holy_Grail">Monty Python and the Holy Grail: Scene 1</a></h4>
      
           [wind]
           [clop clop]
