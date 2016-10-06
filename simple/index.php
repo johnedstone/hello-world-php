@@ -7,7 +7,7 @@
     <?php #<link rel="stylesheet" href="/static/customers/css/customers.css" type="text/css"> ?>
 </head>
 <body style="margin:0;padding:0;background-color: #99c;">
-    <div style="white-space: pre;margin: 2em;background-color: #ccc;font: Consolas, monospace;font-size: 0.8em;">
+    <div style="white-space: pre;margin: 2em;background-color: #ccc;font-family: Monaco, Consolas, monospace;font-size: 0.8em;">
     Scene 1
     
      
