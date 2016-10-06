@@ -9,6 +9,12 @@ shell> oc start-build hello-world-php
 # And watch the pods get rebuilt
 shell> oc get pods -w -o wide
 
+# Where is this app running?
+shell> oc get route
+    NAME              HOST/PORT                                 SERVICE           LABELS
+    hello-world-php   hello-world-php.<wildcard dns *poc*>      hello-world-php   app=hello-world-php
+
+
 # Other notes
 # To see what would be done, before creating new-app
 shell> oc new-app --context-dir=simple/ -o yaml php:latest~https://github.com/johnedstone/hello-world-php.git | tee /var/tmp/withphp
