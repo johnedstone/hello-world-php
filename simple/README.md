@@ -1,10 +1,20 @@
 ```
-# To see what would be done
+# Simplest way to get this app up and running
+shell> oc new-app --context-dir=simple/ https://github.com/johnedstone/hello-world-php.git 
+shell> expose svc hello-world-php --hostname=hello-world-php.<wildcard dns>
+
+# After making changes to code later, then commit, and push to Git, then
+shell> oc start-build hello-world-php
+
+# And watch the pods get rebuilt
+shell> oc get pods -w -o wide
+
+# Other notes
+# To see what would be done, before creating new-app
 shell> oc new-app --context-dir=simple/ -o yaml php:latest~https://github.com/johnedstone/hello-world-php.git | tee /var/tmp/withphp
 shell> oc new-app --context-dir=simple/ -o yaml https://github.com/johnedstone/hello-world-php.git | tee /var/tmp/withoutphp
 
-
-# No difference
+# No difference whether one calls out the php image - must detect
 shell> sdiff /var/tmp/*php
 apiVersion: v1                                                  apiVersion: v1
 items:                                                          items:
